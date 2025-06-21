@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Guest List</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #b76e79;
+    }
+
+    .event-details {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .guest {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 12px 0;
+    }
+
+    .guest:last-child {
+      border-bottom: none;
+    }
+
+    .guest-info {
+      font-size: 16px;
+    }
+
+    .rsvp-button {
+      padding: 8px 16px;
+      background-color: #b76e79;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .rsvp-button:hover {
+      background-color: #9d5e68;
+    }
+
+    .rsvp-form {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+
+    .rsvp-form input,
+    .rsvp-form select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .rsvp-form button {
+      background-color: #b76e79;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .rsvp-form button:hover {
+      background-color: #9d5e68;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Carlos & Edlwilat's Wedding</h1>
+    <div class="event-details">
+      <p><strong>Date:</strong> September 14, 2026</p>
+      <p><strong>Venue:</strong> Temple Fortune Mansions, Finchley Road, Golders Green, London</p>
+      <p><strong>Time:</strong> Ceremony at 4:00 PM, Reception to follow</p>
+    </div>
+
+    <div class="guest-list">
+      <div class="guest">
+        <div class="guest-info">Olivia Rosa</div>
+        <a class="rsvp-button" href="mailto:wedding@email.com?subject=RSVP%20for%20Olivia%20Rosa&body=I%20will%20be%20attending%20Carlos%20%26%20%27s%20wedding.">RSVP</a>
+      </div>
+      <div class="guest">
+        <div class="guest-info">Daniel Abreu</div>
+        <a class="rsvp-button" href="mailto:wedding@email.com?subject=RSVP%20for%20Daniel%20Abreu&body=I%20will%20be%20attending%20Carlos%20%26%20%27s%20wedding.">RSVP</a>
+      </div>
+      <div class="guest">
+        <div class="guest-info">Paula Dikson</div>
+        <a class="rsvp-button" href="mailto:wedding@email.com?subject=RSVP%20for%20Paula%20Dikson&body=I%20will%20be%20attending%20Carlos%20%26%20%27s%20wedding.">RSVP</a>
+      </div>
+      <div class="guest">
+        <div class="guest-info">Michael Peterson</div>
+        <a class="rsvp-button" href="mailto:wedding@email.com?subject=RSVP%20for%20Michael%20Peterson&body=I%20will%20be%20attending%20Carlos%20%26%20%27s%20wedding.">RSVP</a>
+      </div>
+      <div class="guest">
+        <div class="guest-info">Anna Wilson</div>
+        <a class="rsvp-button" href="mailto:wedding@email.com?subject=RSVP%20for%20Anna%20Wilson&body=I%20will%20be%20attending%20Carlos%20%26%20%27s%20wedding.">RSVP</a>
+      </div>
+    </div>
+
+    <div class="rsvp-form">
+      <h2>RSVP via Form</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="attendance">Will you attend?</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">--Select an option--</option>
+          <option value="Yes">Yes, I'll be there</option>
+          <option value="No">Sorry, I can't attend</option>
+        </select>
+
+        <button type="submit">Submit RSVP</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
